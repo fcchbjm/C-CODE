@@ -1,0 +1,154 @@
+#include <stdio.h>
+
+//基本
+
+////包含一个叫stdio.h的文件 std-standard(标准) i-input o-output
+//#include <stdio.h>
+////int 是整型的意思
+////main前面的int表示main函数调用返回一个整型值
+////void main() 这种写法已经过时
+//int main()//主函数-程序的入口-有且只有一个
+//{
+//	printf("hello world\n");//这里打印“hello world”-printf-print function（函数）-打印函数  \n表示输出后换行
+//	//库函数-C语言本身提供给我们的函数 用#include来包含
+//	return 0;//返回 0（整型）
+//}
+
+//数据类型
+
+//int main()
+//{
+//	//char bc = 'A';//向系统申请名为bc的内存并存放字符类型为“A”的数据
+//	//printf("%c/n", bc);//%c-打印字符形式的数据
+//
+//	//int age = 20;//创建一个名为age的变量并赋值为20的整型
+//	//printf("%d\n", age);//%d-打印整型十进制数据
+//
+//	//long num = 100;//长整形
+//	//printf("%d\n", num);
+//
+//	//float f = 5.2;
+//	//printf("%f\n", f);//%f-打印浮点型数字-打印小数
+//
+//	//double d = 3.14;
+//	//printf("%lf\n", d);//%lf-打印双精度浮点型数字
+//
+//	printf("%d\n", sizeof(char));//计算char这种变量可以向计算机申请多少内存
+//	printf("%d\n", sizeof(short));
+//	printf("%d\n", sizeof(int));
+//	printf("%d\n", sizeof(long));
+//	printf("%d\n", sizeof(long long)); 
+//	printf("%d\n", sizeof(float));
+//	printf("%d\n", sizeof(double));
+//	//结果1 2 4 4 8 4 8 （字节数）
+//	//C语言标准规定sizeof(long)>=sizeof(int)，所以sizeof(long)=4或8
+//	//字节 bit-比特位 1或0  byte-字节 一个字节等于8个比特位 kb mb gb tb pb
+//
+//	//short age = 20;//向内存申请2个字节（16个比特位=0-65535），来存放变量名为age的“20”这个整型数字
+//	//float weight = 95.6f;//向内存申请四个字节，用来存放小数，f表示95.6为单精度浮点数
+//	//printf("%d\n",age);
+//	//printf("%f\n", weight);
+//
+//	//总结
+//	//char        //字符数据类型
+//	//short       //短整型
+//	//int         //整型
+//	//long        //长整型
+//	//long long   //更长的整型
+//	//float       //单精度浮点数
+//	//double      //双精度浮点数
+//	//%c-打印字符形式的数据
+//	//%d-打印整型十进制数据
+//	//%f-打印浮点型数字-打印小数
+//	//%p-以地址的形式进行打印
+//	//%x-打印16进制数字
+//	//%o-打印8进制数字
+//	//%lf-打印双精度浮点型数字
+//	//网络总结
+//	//%d 十进制有符号整数
+//	//%u 十进制无符号整数
+//	//%f 浮点数
+//	//%s 字符串
+//	//%c 单个字符
+//	//%p 指针的值
+//	//%e 指数形式的浮点数
+//	//%x, %X 无符号以十六进制表示的整数
+//	//%0 无符号以八进制表示的整数
+//	//%g 自动选择合适的表示法
+//
+//
+//	return 0;
+//}
+
+//全局变量和局部变量
+
+//int num1 = 10;//全局变量-定义在代码块（{}）之外的变量
+//int main()
+//{
+//	int num2 = 20;//局部变量-定义在代码块内部的变量
+//	return 0;
+//}
+
+//int a = 10;
+//int main()
+//{
+//	int a = 20;
+//	//全局变量和局部变量的名字建议不要相同，相同时局部变量优先
+//	printf("%d\n", a);
+//}
+
+//int a = 10;//全局变量
+//int main()
+//{
+//	{
+//		int a = 20;//小代码块中的局部变量
+//	}
+//	printf("%d\n",a);//输出结果 10
+//}
+
+//int main()
+//{
+//	//计算两个数的和
+//	printf("请输入两个相加数");
+//	int num1 = 0;
+//	int num2 = 0;
+//	scanf_s("%d%d",&num1,&num2);//输入数据-使用输入函数scanf，取地址符号&
+//	// 'scanf': This function or variable may be unsafe.Consider using scanf_s instead.To disable deprecation, use _CRT_SECURE_NO_WARNINGS.See online help for details
+//	int sum = 0;//设变量sum
+//	//C语言语法规定：变量要定义在当前代码块的最前面（vs2010规定，但vs2017可以运行）
+//	sum = num1 + num2;
+//	printf("结果是%d\n",sum);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int num = 10;
+//	{
+//		int num = 20;//局部变量的作用域-它所在代码块内部
+//	}
+//	printf("num=%d",num);
+//	return 0;
+//}
+
+//int global = 10;//全局变量的作用域-整个工程
+//void  test()
+//{
+//	printf("test=%d\n",global);
+//	return 0;
+//}
+//int main()
+//{
+//	printf("main=%d\n",global);
+//	return 0;
+//}
+
+//外部引用-即引用其它.c文件中的变量（extern.c）
+
+//int main()
+//{
+//	//声明之前wb这个变量是未声明的标识符
+//	extern int wb;//使用声明extern外部符号
+//	printf("wb=%d",wb);
+//	return 0;
+//}
