@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+//结构体
+
+#include<string.h>//strcpy函数需要用到
+
+//struct Book //创建一个结构体类型Book
+//{
+//	char name[20];//此处name创建的一个数组，不是变量，数组名相当于地址
+//	short price;
+//};//此处;不可缺少，表示类型结束
+//int main()
+//{
+//	struct Book abc = {"C语言程序设计",55};//利用结构体类型，创建一个该类型的结构体变量abc
+//	printf("书名：%s\n",abc.name);//. 应用于结构体变量，找到成员，abc.name表示找到变量abc中子成员name并打印
+//	printf("价格：%d元\n",abc.price);
+//	abc.price = 50;
+//	printf("优惠价：%d元\n", abc.price);
+//	struct Book* pb = &abc;
+//	printf("书名：%s\n", (*pb).name);//利用指针
+//	printf("优惠价：%d元\n", (*pb).price);
+//	printf("书名：%s\n", pb->name);//利用指针和操作符，-> 利用指针指向成员
+//	printf("优惠价：%d元\n", pb->price);
+//	strcpy(abc.name,"C++程序设计");//strcpy-string copy-字符串拷贝
+//	printf("更改后书名：%s\n", (*pb).name);
+//
+//	return 0;
+//}
