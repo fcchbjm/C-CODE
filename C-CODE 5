@@ -86,7 +86,7 @@ int main()
 	case 1://依据day中的数字决定入口
 		printf("星期一\n");
 		break;//跳出该语句，结束，否则会继续执行直到该语句结束
-	case 2:
+	case 2://不能是变量
 		printf("星期二\n");
 		break;
 	case 3:
