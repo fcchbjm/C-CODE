@@ -76,36 +76,129 @@
 
 //switch语句，常用于多分支语句
 
-int main()
-{
-	int day = 0;
-	printf("请输入星期几（整数）：");
-	scanf("%d",&day);
-	switch (day)
-	{
-	case 1://依据day中的数字决定入口
-		printf("星期一\n");
-		break;//跳出该语句，结束，否则会继续执行直到该语句结束
-	case 2://不能是变量
-		printf("星期二\n");
-		break;
-	case 3:
-		printf("星期三\n");
-		break;
-	case 4:
-		printf("星期四\n");
-		break;
-	case 5:
-		printf("星期五\n");
-		break;
-	case 6:
-		printf("星期六\n");
-		break;
-	case 7:
-		printf("星期日\n");
-		break;
-	}
+//int main()
+//{
+//	//int day = 0;
+//	//printf("请输入星期几（整数）：");
+//	//scanf("%d",&day);
+//	////switch (day)
+//	////{
+//	////case 1://依据day中的数字决定入口
+//	////	printf("星期一\n");
+//	////	break;//跳出该语句，结束，否则会继续执行直到该语句结束
+//	////case 2://不能是变量
+//	////	printf("星期二\n");
+//	////	break;
+//	////case 3:
+//	////	printf("星期三\n");
+//	////	break;
+//	////case 4:
+//	////	printf("星期四\n");
+//	////	break;
+//	////case 5:
+//	////	printf("星期五\n");
+//	////	break;
+//	////case 6:
+//	////	printf("星期六\n");
+//	////	break;
+//	////case 7:
+//	////	printf("星期日\n");
+//	////	break;
+//	////}
+//	//
+//	////switch (day)
+//	////{
+//	////case 1:
+//	////case 2:
+//	////case 3:
+//	////case 4:
+//	////case 5:
+//	////	printf("工作日\n");
+//	////	break;
+//	////case 6:
+//	////case 7:
+//	////	printf("休息日\n");
+//	////	break;
+//	////default://除以上数字的其它输出结果
+//	////	printf("输入数字有误，请重新输入\n");
+//	////	break;
+//	////}
+//	
+//	////练习
+//	//int n = 1;
+//	//int m = 2;
+//	//switch (n)
+//	//{
+//	//case 1:
+//	//	m++;
+//	//case 2:
+//	//	n++;
+//	//case 3:
+//	//	switch (n)
+//	//	{
+//	//	case 1:
+//	//		n++;
+//	//	case 2:
+//	//		m++;
+//	//		n++;
+//	//		break;
+//	//	}
+//	//case 4:
+//	//	m++;
+//	//	break;
+//	//default:
+//	//	break;
+//	//}
+//	//printf("m = % d\nn = % d\n",m,n);//结果m=5，n=3，因为前面没有break，所以连续执行
+//
+//	return 0;
+//}
 
+//if语句
 
-	return 0;
-}
+//int main()
+//{
+//	if (0)//if括号内为0，为假，不执行下面语句
+//		printf("haha\n");
+//	if (1)//if括号内为1，为真，执行下面语句
+//		printf("hehe\n");
+//	return 0;
+//}
+
+//while语句
+
+//int main()
+//{
+//	int i = 0;
+//		while (i <= 10)
+//		{
+//			i++;
+//			if (i == 5)
+//			{
+//				printf(" ");
+//				continue;//当执行到continue时，终止本次循环，不再执行后面的代码，而是直接回到while语句开头进行判断
+//			}
+//			if (i == 11)
+//				break;//直接终止循环，不在执行该循环
+//			printf("%d\n",i);
+//		}
+//	return 0;
+//}
+
+//getchar语句-可以接收键盘输入的字符 putchar-输出键盘输入的字符
+
+//int main()
+//{
+//	//int  ch = getchar();
+//	//putchar(ch);
+//	//printf("%c\n", ch);
+//
+//	//int ch = 0;
+//	//while ((ch = getchar()) != (EOF))//此处EOF为end of file，值为-1，如果输入EOF由于是三个字符，所以并不会停止，使用ctrl+Z
+//	//{
+//	//	putchar(ch);
+//	//}
+//
+//
+//	return 0;
+//}
