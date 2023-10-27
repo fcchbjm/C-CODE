@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main()
+{
+	//char password[20] = { 0 };
+	//printf("请输入密码：");
+	//scanf("%s", password);//输入密码，并存放在password中
+	//printf("请确认（Y/N）：");
+	//int ch = 0;
+	//while ((ch = getchar()) != '\n') //此处的getchar用来接收字符，循环来确保一直接收到输入密码后的回车键
+	//{
+
+	//}
+	//int ret = 0;
+	//ret = getchar();
+	//if (ret == 'Y')
+	//	printf("确认成功\n");
+	//else if (ret == 'N')
+	//	printf("已取消\n");
+	//else
+	//	printf("输入错误\n");
+
+	//int ret = 0;
+	//while ((ret = getchar()) != EOF)
+	//{
+	//	if (ret < '0' || ret>'9')
+	//		continue;
+	//	else
+	//		putchar(ret);
+	//}
+
+
+
+
+
+	return 0;
+}
