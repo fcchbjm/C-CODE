@@ -1,2 +1,199 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+
+//练习：
+
+//1.将三个数从大到小输出
+
+//////我的答案：
+////int main()
+////{
+////	printf("请输入需要比大小的三个整数：");
+////	int a = 0;
+////	int b = 0;
+////	int c = 0;
+////	scanf("%d%d%d", &a, &b, &c);
+////	if (a >= b)
+////	{
+////		if (a >= c)
+////		{
+////			if (b >= c)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", a, b, c);
+////			else if (b < c)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", a, c, b);
+////			else
+////				printf("error");
+////		}
+////		else if (a < c)
+////		{
+////			if (c >= b)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", c, a, b);
+////			else
+////				printf("error");
+////		}
+////		else
+////			printf("error");
+////	}
+////	else if (a < b)
+////	{
+////		if (a >= c)
+////		{
+////			if (b >= c)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", b, a, c);
+////			else
+////				printf("error");
+////		}
+////		else if (a < c)
+////		{
+////			if (b >= c)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", b, c, a);
+////			else if (b < c)
+////				printf("这三个整数从大到小分别是：%d %d %d\n", c, b, a);
+////			else
+////				printf("error");
+////		}
+////		else
+////			printf("error");
+////	}
+////	else
+////		printf("error");
+////	return 0;
+////}
+////（另一种更优解）
+//int main()
+//{
+//	printf("请输入需要比大小的三个整数：");
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	scanf("%d%d%d", &a, &b, &c);
+//	if (a < b)
+//	{
+//		int d = a;
+//		a = b;
+//		b = d;
+//	}
+//	if (a < c)
+//	{
+//		int d = a;
+//		a = c;
+//		c = d;
+//	}
+//	if (b < c)
+//	{
+//		int d = b;
+//		b = c;
+//		c = d;
+//	}
+//	printf("这三个整数从大到小分别是：%d %d %d\n", a, b, c);
+//	return 0;
+//}
+
+//2.打印1~100之间所有3的倍数的数字
+
+////我的答案：
+//int main()
+//{
+//	int a = 0;
+//	for (a = 1; a*3 <= 100; a++)
+//	{
+//		printf("%d\n", a*3);
+//	}
+//	return 0;
+//}
+////（另一种写法）
+////int main()
+////{
+////	int a = 0;
+////	for (a = 1; a <= 100; a++)
+////	{
+////		if (a % 3 == 0)
+////			printf("%d\n", a);
+////	}
+////	return 0;
+////}
+
+//3.给定两个数，求这两个数的最大公约数
+
+////我的答案：
+//////（在编写过程中发现了最小公约数的求法）
+////int main()
+////{
+////	int a = 0;
+////	int b = 0;
+////	int c = 0;
+////	printf("请输入需要求最小公约数的两个整数：");
+////	scanf("%d%d", &a, &b); 
+////	for (c = 2; a % c != 0 || b % c != 0; c++)
+////	{
+////		if (c >= b || c >= a)
+////		{
+////			printf("%d和%d之间没有最小公约数。\n",a,b);
+////			exit(1);
+////		}
+////	}
+////	printf("%d和%d的最小公约数为%d", a, b, c);
+////	return 0;
+////}
+////（咳咳，回归正题，最大公约数的求法）
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	int d = 0;
+//	int e = 0;
+//	printf("请输入需要求最大公约数的两个整数：");
+//	scanf("%d%d", &a, &b); 
+//	if (a >= b)
+//		c = a;
+//	else if (a < b)
+//		c = b;
+//	else
+//	{
+//		printf("error");
+//		exit(1);
+//	}
+//	for (d = c; d>=2; d--)
+//	{
+//		if (a % d == 0 && b % d == 0)
+//		{
+//			printf("%d和%d的最大公约数为%d", a, b, d);
+//			exit(0);
+//		}
+//	}
+//	printf("%d和%d之间没有最大公约数。\n", a, b);
+//	exit(2);
+//	return 0;
+//}
+//（另一种更优解（辗转相除法））
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	printf("请输入需要求最大公约数的两个整数：");
+	scanf("%d%d", &a, &b); 
+	while (a % b)
+	{
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	printf("最大公约数为%d",b);
+	return 0;
+}
+
+//4.打印1000年~2000年之间的闰年
+
+////我的答案：
+//int main()
+//{
+//	int year = 0;
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//		if (year % 4 == 0)
+//			printf("%d\n", year);
+//	}
+//	return 0;
+//}
