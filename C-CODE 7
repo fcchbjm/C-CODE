@@ -351,116 +351,150 @@
 
 //10.猜数字游戏
 
-//我的答案：
-int dat = 0;
-int n = 0;
-void menu()
-{
-	printf("****************************************\n");
-	printf("*              猜数字游戏              *\n");
-	printf("****************************************\n");
-	printf("*              1.开始游戏              *\n");
-	printf("*              2.配置游戏              *\n");
-	printf("*              0.退出游戏              *\n");
-	printf("****************************************\n");
-}
-void config()
-{
-	printf("请输入尝试参数（默认5次）：");
-	scanf("%d", &dat);
-	if (dat >= 1)
-	{
-		printf("修改成功！\n");
-		n++;
-	}
-	else
-	{
-		printf("修改失败，已重置。\n");
-		dat = 0;
-	}
-}
-#include <stdlib.h>//使用srand函数和rand函数
-#include <time.h>//使用time函数
-void game()
-{
-	int num = 0;
-	int i = 0;
-	int guess = 0;
-	num = rand()%100+1;//这里生成1~100之间的随机数，由于rand函数生成0~32767之间的整数，因此需要进行数学运算确保生成数符合要求
-	printf("游戏已开始。\n");
-	for (i = 5; i >= 1; i--)
-	{
-		for (n; n >= 1; n--)
-		{
-			if (dat != 0)
-				i = dat;
-			else
-				break;
-		}
-		printf("请输入你猜测的数字（1~100之间的整数）：");
-		scanf("%d", &guess);
-		if (guess > num)
-		{
-			printf("你所猜测的数字过大。\n");
-			if (i == 1)
-			{
-				system("cls");
-				printf("很遗憾，尝试次数已耗尽，再来一次吧。\n");
-				break;
-			}
-			else
-			printf("加油，你还有%d次机会。\n", i - 1);
-		}
-		else if (guess < num)
-		{
-			printf("你所猜测的数字过小。\n");
-			if (i == 1)
-			{
-				system("cls");
-				printf("很遗憾，尝试次数已耗尽，再来一次吧。\n");
-				break;
-			}
-			else
-			printf("加油，你还有%d次机会。\n", i - 1);
-		}
-		else if (guess = num)
-		{
-			system("cls");
-			printf("恭喜你，你猜对了！\n");
-			break;
-		}
-	}
+////我的答案：
+//int dat = 0;
+//int n = 0;
+//void menu()
+//{
+//	printf("****************************************\n");
+//	printf("*              猜数字游戏              *\n");
+//	printf("****************************************\n");
+//	printf("*              1.开始游戏              *\n");
+//	printf("*              2.配置游戏              *\n");
+//	printf("*              0.退出游戏              *\n");
+//	printf("****************************************\n");
+//}
+//void config()
+//{
+//	printf("请输入尝试参数（默认5次）：");
+//	scanf("%d", &dat);
+//	if (dat >= 1)
+//	{
+//		printf("修改成功！\n");
+//		n++;
+//	}
+//	else
+//	{
+//		printf("修改失败，已重置。\n");
+//		dat = 0;
+//	}
+//}
+//#include <stdlib.h>//使用srand函数和rand函数
+//#include <time.h>//使用time函数
+//void game()
+//{
+//	int num = 0;
+//	int i = 0;
+//	int guess = 0;
+//	num = rand()%100+1;//这里生成1~100之间的随机数，由于rand函数生成0~32767之间的整数，因此需要进行数学运算确保生成数符合要求
+//	printf("游戏已开始。\n");
+//	for (i = 5; i >= 1; i--)
+//	{
+//		for (n; n >= 1; n--)
+//		{
+//			if (dat != 0)
+//				i = dat;
+//			else
+//				break;
+//		}
+//		printf("请输入你猜测的数字（1~100之间的整数）：");
+//		scanf("%d", &guess);
+//		if (guess > num)
+//		{
+//			printf("你所猜测的数字过大。\n");
+//			if (i == 1)
+//			{
+//				system("cls");
+//				printf("很遗憾，尝试次数已耗尽，再来一次吧。\n");
+//				break;
+//			}
+//			else
+//			printf("加油，你还有%d次机会。\n", i - 1);
+//		}
+//		else if (guess < num)
+//		{
+//			printf("你所猜测的数字过小。\n");
+//			if (i == 1)
+//			{
+//				system("cls");
+//				printf("很遗憾，尝试次数已耗尽，再来一次吧。\n");
+//				break;
+//			}
+//			else
+//			printf("加油，你还有%d次机会。\n", i - 1);
+//		}
+//		else if (guess = num)
+//		{
+//			system("cls");
+//			printf("恭喜你，你猜对了！\n");
+//			break;
+//		}
+//	}
+//
+//}
+//int main()
+//{
+//	int input = 0;
+//	srand((unsigned int)time(NULL));//srand为随机数rand的种子，括号内输入种子，要求无符号整型，因此使用(unsigned int)进行强制类型转换，同时调用time函数生成时间戳（现在时间与1970年1月1日0时0分0秒的秒数差）time函数括号内为空指针,srand函数一般设置一次就可以了
+//	do
+//	{
+//		menu();
+//		printf("请选择：");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 0:
+//			system("cls");
+//			printf("游戏已退出。\n");
+//			exit(0);
+//			break;
+//		case 1:
+//			system("cls");
+//			game();//游戏主体
+//			break;
+//		case 2:
+//			system("cls");
+//			config();
+//			break;
+//		default:
+//			system("cls");
+//			printf("输入错误，请重新选择。\n");
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}
 
-}
-int main()
-{
-	int input = 0;
-	srand((unsigned int)time(NULL));//srand为随机数rand的种子，括号内输入种子，要求无符号整型，因此使用(unsigned int)进行强制类型转换，同时调用time函数生成时间戳（现在时间与1970年1月1日0时0分0秒的秒数差）time函数括号内为空指针,srand函数一般设置一次就可以了
-	do
-	{
-		menu();
-		printf("请选择：");
-		scanf("%d", &input);
-		switch (input)
-		{
-		case 0:
-			system("cls");
-			printf("游戏已退出。\n");
-			exit(0);
-			break;
-		case 1:
-			system("cls");
-			game();//游戏主体
-			break;
-		case 2:
-			system("cls");
-			config();
-			break;
-		default:
-			system("cls");
-			printf("输入错误，请重新选择。\n");
-			break;
-		}
-	} while (input);
-	return 0;
-}
+//goto语句
+
+//#include <string.h>
+//#include <stdlib.h>
+//int main()
+//{
+//	//printf("hello!\n");
+//	//goto again;//goto语句可以快速跳转
+//	//printf("welcome!\n");//这里跳过了此行代码
+//	//again:
+//	//	printf("nice!\n");
+//
+//	//char input[20];
+//	//system("shutdown -s -t 300");//system()处理系统命令，shutdown.exe执行关机程序
+//	//printf("你的电脑将在300秒内关机\n");
+//	//printf("为避免电脑关机，请在下方输入“你好”\n");
+//	//again:
+//	//{
+//	//	printf("请输入：");
+//	//	scanf("%s", &input);
+//	//	if (strcmp(input, "你好") == 0)
+//	//	{
+//	//		system("shutdown -a");
+//	//		printf("输入正确，关机已取消。\n");
+//	//	}
+//	//	else
+//	//	{
+//	//		printf("输入错误，请重新输入。\n");
+//	//		goto again;
+//	//	}
+//	//}
+//	return 0;
+//}
