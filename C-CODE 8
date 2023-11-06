@@ -1,2 +1,35 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#include <string.h>
+
+//1.函数的定义
+//库函数：经常用到的基础功能，集成到C语言基础库中
+//自定义函数：
+
+//int Add(int x, int y)//定义这个函数，并确定输入的元素类型,和函数的返回类型
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;//返回结果
+//}
+int main()
+{
+	//int a = 10;
+	//int b = 20;
+	//int sum = Add(a, b);//通过自定义Add这个函数来计算a+b的值
+	//printf("%d\n", sum);
+
+	//char arr1[20] = { 'n','i','c','e',' ','t','o',' ','m','e','e','t',' ','y','o','u','!' };
+	//char arr2[20] = { "###################\0"};
+	//printf("%s\n", arr1);
+	//printf("%s\n", arr2);
+	//strcpy(arr2, arr1);//strcpy-string copy-字符串拷贝，用法strcpy (destination，source);
+	//printf("%s\n", arr1);
+	//printf("%s\n", arr2);
+
+	//char arr[] = { "hello world!" };
+	//memset(arr, '*', 5);//memset函数-memory set-内存设置，用法memset(指定元素，需要的内容，字节数)
+	//printf("%s\n", arr);
+
+	return 0;
+}
