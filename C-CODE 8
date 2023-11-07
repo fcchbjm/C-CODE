@@ -194,7 +194,7 @@
 //	char arr[] = {'a','b','c'};
 //	int sz = sizeof(arr)/sizeof(arr[0]);
 //	three(sz);
-//	printf("%d\n", strlen("abc"));//链式访问"abc"-strlen-printf
+//	printf("%d\n", strlen("abc"));//链式访问"abc"-strlen-printf,把一个函数的返回值作为另一个函数的参数
 //	printf("%d", printf("%d", printf("%d", printf("%d", printf("%d", 43)))));//printf的返回值为printf打印的字符的个数
 //	return 0;
 //}
