@@ -1,2 +1,51 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#include <string.h>
+
+//#include "test.h"//包含这个头文件，就相当于把这个头文件的内容全部拷贝到这里
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = Add(a, b);//这个函数的声明在test.h中，函数定义在extern.c中
+//	printf("a+b=%d\n", sum);
+//	return 0;
+//}
+
+//递归：函数调用自身的编程技巧
+
+//void print_back(int n)
+//{
+//	if (n > 9)//递归的条件
+//		print_back(n / 10);//此处可以多次递归
+//	printf("%d\n", n % 10);
+//}
+//int main()
+//{
+//	//printf("hehe\n");
+//	//main();//最简单的递归函数，但运行一段时间后会报错，原因：Stack overflow（栈溢出）
+//	////内存分为栈区（包含局部变量，函数形参），堆区（包含动态开辟的内存），静态区（包含全局变量和static修饰的变量）
+//
+//	//unsigned int num = 0;
+//	//scanf("%d", &num);
+//	//print_back(num);
+//
+//	//return 0;
+//}
+
+//1.练习：编写函数不允许创建临时变量，求字符串的长度
+
+//int ask_strlen(char* str)
+//{
+//	if (*str != '\0')
+//		return 1 + ask_strlen(str + 1);
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "hello!";
+//	printf("%d\n", ask_strlen(&arr));
+//	return 0;
+//}
