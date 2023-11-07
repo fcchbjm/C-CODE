@@ -146,7 +146,7 @@
 //	int k = 0;
 //	printf("请输入需要查找的数字：");
 //	scanf("%d", &k);
-//	int ret = binary_search(arr, k, sz);//此处传递数组的首元素的地址
+//	int ret = binary_search(arr, k, sz);//此处传递数组的首元素的地址,因此不能在函数内计算元素个数，需要在主函数计算完成后传递给函数
 //	if (ret == EOF)
 //		printf("找不到该数字。\n");
 //	else
