@@ -1,10 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-#include <string.h>
 
 //1.函数的定义
 //库函数：经常用到的基础功能，集成到C语言基础库中
-//自定义函数：
+//自定义函数
+//实参与形参
 
 //int Add(int x, int y)//定义这个函数，并确定输入的元素类型,和函数的返回类型
 //{
@@ -12,24 +12,208 @@
 //	z = x + y;
 //	return z;//返回结果
 //}
-int main()
-{
-	//int a = 10;
-	//int b = 20;
-	//int sum = Add(a, b);//通过自定义Add这个函数来计算a+b的值
-	//printf("%d\n", sum);
+//int Max(int x, int y)
+//{
+//	if (x >= y)
+//		return x;
+//	else if (x < y)
+//		return y;
+//	else
+//		return EOF;
+//}
+//void Swap1(int x, int y)//void代表空或无，表示没有返回值
+//{
+//	int z = x;//这里形参是实参的一份临时拷贝，对形参的修改不影响实参
+//	x = y;
+//	y = z;
+//}
+//void Swap2(int* x, int* y)//此处x和y是形参，只在函数调用时创建并接收数据，函数结束后销毁
+//{
+//	int z = *x;
+//	*x = *y;
+//	*y = z;
+//}
+// #include <string.h>
+//int main()
+//{
+//	//int a = 10;
+//	//int b = 20;
+//	//int sum = Add(a, b);//通过自定义Add这个函数来计算a+b的值
+//	//printf("%d\n", sum);
+//
+//	//char arr1[20] = { 'n','i','c','e',' ','t','o',' ','m','e','e','t',' ','y','o','u','!' };
+//	//char arr2[20] = { "###################\0"};
+//	//printf("%s\n", arr1);
+//	//printf("%s\n", arr2);
+//	//strcpy(arr2, arr1);//strcpy-string copy-字符串拷贝，用法strcpy (destination，source);
+//	//printf("%s\n", arr1);
+//	//printf("%s\n", arr2);
+//
+//	//char arr[] = { "hello world!" };
+//	//memset(arr, '*', 5);//memset函数-memory set-内存设置，用法memset(指定元素，需要的内容，字节数)
+//	//printf("%s\n", arr);
+//
+//	//int a = 10;
+//	//int b = 20;
+//	//int num = Max(a, b);
+//	//printf("max=%d\n", num);
+//	
+//	//int a = 10;
+//	////int* pa = &a;//定义指针变量pa，同时赋值a的地址给pa
+//	////*pa = 20;//解引用操作符，将20赋值给a
+//	//int b = 20;//此处的a和b是实参，在进入函数时将值传递给形参
+//	//printf("a = % d, b = % d\n", a, b);
+//	////调用Swap1函数，传值调用，形参和实参分别占用不同内存块
+//	//Swap1(a, b);//这个函数在主函数外创建变量，内存地址不同，无法交换变量值
+//	//printf("a = % d, b = % d\n", a, b);
+//	////调用Swap2函数，传址调用
+//	//Swap2(&a, &b);//取地址，确保内存地址相同，成功交换变量值
+//	//printf("a = % d, b = % d\n", a, b);
+//	//return 0;
+//}
 
-	//char arr1[20] = { 'n','i','c','e',' ','t','o',' ','m','e','e','t',' ','y','o','u','!' };
-	//char arr2[20] = { "###################\0"};
-	//printf("%s\n", arr1);
-	//printf("%s\n", arr2);
-	//strcpy(arr2, arr1);//strcpy-string copy-字符串拷贝，用法strcpy (destination，source);
-	//printf("%s\n", arr1);
-	//printf("%s\n", arr2);
+//1.写一个函数可以判断一个数是不是素数
 
-	//char arr[] = { "hello world!" };
-	//memset(arr, '*', 5);//memset函数-memory set-内存设置，用法memset(指定元素，需要的内容，字节数)
-	//printf("%s\n", arr);
+////我的答案：
+//#include<math.h>
+//void prime_number(int x)
+//{
+//	int n = 0;
+//	for (n = 2; n <= sqrt(x); n++)
+//	{
+//		if (x % n == 0)
+//		{
+//			printf("%d不是一个素数。\n", x);
+//			break;
+//		}
+//	}
+//	if (n > sqrt(x))
+//	{
+//		printf("%d是一个素数\n", x);
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	printf("请输入需要判断的整数：");
+//	scanf("%d", &n);
+//	prime_number(n);
+//	return 0;
+//}
 
-	return 0;
-}
+//2.写一个函数判断一年是不是闰年
+
+////我的答案：
+//void leap_year(int x)
+//{
+//	if ((x % 4 == 0 && x % 100 != 0) || (x % 400 == 0))
+//		printf("%d年是闰年！\n", x);
+//	else
+//		printf("%d年不是闰年。\n", x);
+//}
+//int main()
+//{
+//	int year = 0;
+//	printf("请输入年份：");
+//	scanf("%d", &year);
+//	leap_year(year);
+//	return 0;
+//}
+
+//3.写一个函数实现一个整型有序数组的二分查找
+
+////我的答案：
+//int binary_search(int arr[],int k,int sz)
+//{
+//	int left = 0;
+//	int right = sz - 1;
+//	while (left <= right)
+//	{
+//		int medium = (left + right) / 2;
+//		if (arr[medium] > k)
+//			right = medium - 1;
+//		else if (arr[medium] < k)
+//			left = medium + 1;
+//		else if (arr[medium] == k)
+//			return medium;
+//	}
+//	return EOF;
+//}
+//int main()
+//{
+//	int arr[20] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int k = 0;
+//	printf("请输入需要查找的数字：");
+//	scanf("%d", &k);
+//	int ret = binary_search(arr, k, sz);//此处传递数组的首元素的地址
+//	if (ret == EOF)
+//		printf("找不到该数字。\n");
+//	else
+//		printf("找到了！%d在该数组中的下标为%d", k, ret);
+//	return 0;
+//}
+
+//4.写一个函数，每调用一次这个r函数，就会使num的值增加1
+
+////我的答案：
+//void number(int* num)
+//{
+//	(*num)++;//由于++的优先级比*更高，所以不能写成*num++，要带括号，否则为先num++后*num
+//}
+//int main()
+//{
+//	int num = 0;
+//	printf("请输入循环次数：");
+//	int i = 0;
+//	scanf("%d", &i);
+//	for (i; i > 0; i--)
+//	{
+//		number(&num);
+//	}
+//	printf("num=%d\n", num);
+//	return 0;
+//}
+
+//函数的嵌套调用和链式访问
+
+//#include <string.h>
+//void size(int y)
+//{
+//	printf("%d\n",y);
+//}
+//void three(int x)
+//{
+//	for (int i = 0; i < 3; i++)
+//	{
+//		size(x);//在一个函数内包含另一个函数叫做函数的嵌套
+//	}
+//}
+//int main()
+//{
+//	char arr[] = {'a','b','c'};
+//	int sz = sizeof(arr)/sizeof(arr[0]);
+//	three(sz);
+//	printf("%d\n", strlen("abc"));//链式访问"abc"-strlen-printf
+//	printf("%d", printf("%d", printf("%d", printf("%d", printf("%d", 43)))));//printf的返回值为printf打印的字符的个数
+//	return 0;
+//}
+
+//函数的声明和定义
+
+//int Add(int, int);//在此处声明Add函数，声明其参数类型和返回值类型，一般放在头文件里声明，在另一个.c文件中存放函数定义
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = 0;
+//	sum = Add(a, b);
+//	printf("%d\n", sum);
+//	return 0;
+//}
+//int Add(int x, int y)//编译器按顺序编译，Add定义在main函数之后，会出现警告：“Add”未定义；假设外部返回。因此要在前面声明函数，或者把该函数放在前面
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
