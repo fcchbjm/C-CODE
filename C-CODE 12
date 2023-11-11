@@ -1,2 +1,64 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+
+//数组作为函数参数
+
+//void bubble_sort(int arr[],int sz)
+//{
+//	for (int m = 0; m < sz - 1; m++)
+//	{
+//		int flag = 1;//假设这一趟要排序的数据已经有序
+//		for (int n = 0; n < sz - m - 1; n++)//每一趟冒泡排序
+//		{
+//			if (arr[n] > arr[n + 1])
+//			{
+//				int tmp = 0;
+//				tmp = arr[n + 1];
+//				arr[n + 1] = arr[n];
+//				arr[n] = tmp;
+//				flag = 0;
+//			}
+//		}
+//		if (flag == 1)
+//			break;
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 10,9,8,7,6,5,4,3,2,1 };//需要对该函数进行排序，排成升序
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	bubble_sort(arr, sz);//冒泡排序函数，数组传参传递的是地址
+//	printf("排序结果是：\n");
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("arr[%d]=%-4d", i, arr[i]);
+//		if (i == 4)
+//			printf("\n");
+//	}
+//	return 0;
+//}
+
+//数组一般是首元素的地址，但有两种例外
+//1.sizeof(数组名)--此处数组名表示这个数组，计算的是整个数组的大小
+//2.&数组名，数组名代表整个数组，输出的是整个数组的地址
+
+//int main()
+//{
+//	int arr[5] = { 1,2,3,4,5 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	printf("%p\n", arr);//代表数组第一个元素的地址
+//	printf("%p\n", arr+1);
+//	printf("%p\n", &arr[0]);//代表数组第一个元素的地址
+//	printf("%p\n", &arr[0]+1);
+//	printf("%p\n", &arr);//代表整个数组的地址
+//	printf("%p\n", &arr+1);
+//	printf("%d\n",(int) sizeof(arr));
+//	//运行结果：
+//	//000000507A0FFB88 （arr）数组首元素的地址
+//	//000000507A0FFB8C （arr+1）数组下一元素的地址
+//	//000000507A0FFB88 （&arr[0]）数组首元素的地址
+//	//000000507A0FFB8C （&arr[0]+1）数组下一元素的地址
+//	//000000507A0FFB88 （&arr）数组的地址
+//	//000000507A0FFB9C （&arr+1）跳过了20个字节，即跳过了整个数组
+//	return 0;
+//}
