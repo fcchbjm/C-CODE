@@ -1,2 +1,73 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+
+//递归与迭代
+
+//1.用递归的方式求n的阶乘
+
+//int fac(int n)
+//{
+//	if (n <= 1)
+//		return 1;
+//	else
+//		return n * fac(n - 1);
+//}
+//int main()
+//{
+//	int n = 0;
+//	int num = 0;
+//	printf("请输入n的值：");
+//	scanf("%d", &n);
+//	num = fac(n);
+//	printf("结果是：%d\n", num);
+//	return 0;
+//}
+
+//2.求第n个斐波那契数（不考虑溢出）
+
+//unsigned long long Fib(int x)
+//{
+//	if (x <= 2)
+//		return 1;
+//	//else
+//	//	return Fib(x - 1) + Fib(x - 2);//涉及多次重复计算效率低下
+//	else
+//	{
+//		unsigned long long a = 1;
+//		unsigned long long b = 1;
+//		unsigned long long c = 0;
+//		while (x > 2)
+//		{
+//			c = a + b;
+//			a = b;
+//			b = c;
+//			x--;
+//		}
+//		return c;
+//	}
+//
+//}
+//int main()
+//{
+//	int a = 0;
+//	unsigned long long ret = 0;
+//	printf("请输入你要求第几个斐波那契数：");
+//	scanf("%d", &a);
+//	ret = Fib(a);//先写函数用法，在开发函数-TDD-测试驱动开发
+//	printf("结果是：%llu\n", ret);
+//	return 0;
+//}
+
+//3.汉诺塔问题
+
+//题目： 给定三根柱子，记为 A,B,C ，其中 A 柱子上有 n 个盘子，从上到下编号为 0 到 n-1 ，且上面的盘子一定比下面的盘子小。问：将 A 柱上的盘子经由 B 柱移动到 C柱最少需要多少次？ ​ 移动时应注意：① 一次只能移动一个盘子 ​ ②大的盘子不能压在小盘子上
+
+//我的答案：
+
+//4.青蛙跳台阶问题
+
+//题目：
+//初级版：从前有一只青蛙他想跳台阶，有n级台阶，青蛙一次可以跳1级台阶，也可以跳2级台阶；问：该青蛙跳到第n级台阶一共有多少种跳法。
+//进阶版：从前有一只青蛙想跳台阶去高峰，若该青蛙一次可以跳上1级台阶、也可以跳上2级……（n - 1）级、n级。那么该青蛙跳上第n级的台阶时总共有多少种跳法。（前提是n个台阶会有一次n阶的跳法）
+
+//我的答案：
