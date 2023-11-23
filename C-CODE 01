@@ -2,16 +2,16 @@
 
 //基本
 
-////包含一个叫stdio.h的文件 std-standard(标准) i-input o-output
+////包含一个叫stdio.h的文件 std-standard(标准) i-input o-output 即标准输入输出头文件
 //#include <stdio.h>
 ////int 是整型的意思
 ////main前面的int表示main函数调用返回一个整型值
 ////void main() 这种写法已经过时
-//int main()//主函数-程序的入口-有且只有一个
-//{
-//	printf("hello world\n");//这里打印“hello world”-printf-print function（函数）-打印函数  \n表示输出后换行
+//int main()//主函数-程序的入口-有且只有一个，括号内可以为空或(void)表示main函数无参数，main函数可以有参数，如：int main(int argc,char* argv[])
+//{//大括号内为函数体
+//	printf("hello world！\n");//这里打印“hello world”-printf-print format（格式）-按照指定的格式打印的函数  \n表示输出后换行
 //	//库函数-C语言本身提供给我们的函数 用#include来包含
-//	return 0;//返回 0（整型）
+//	return 0;//返回 0（整型），返回0表示正常返回
 //}
 
 //数据类型
@@ -33,23 +33,23 @@
 //	//double d = 3.14;
 //	//printf("%lf\n", d);//%lf-打印双精度浮点型数字
 //
-//	printf("%d\n", sizeof(char));//计算char这种变量可以向计算机申请多少内存
-//	printf("%d\n", sizeof(short));
-//	printf("%d\n", sizeof(int));
-//	printf("%d\n", sizeof(long));
-//	printf("%d\n", sizeof(long long)); 
-//	printf("%d\n", sizeof(float));
-//	printf("%d\n", sizeof(double));
-//	//结果1 2 4 4 8 4 8 （字节数）
-//	//C语言标准规定sizeof(long)>=sizeof(int)，所以sizeof(long)=4或8
-//	//字节 bit-比特位 1或0  byte-字节 一个字节等于8个比特位 kb mb gb tb pb
+//	//printf("%d\n", sizeof(char));//计算char这种变量可以向计算机申请多少内存
+//	//printf("%d\n", sizeof(short));
+//	//printf("%d\n", sizeof(int));
+//	//printf("%d\n", sizeof(long));
+//	//printf("%d\n", sizeof(long long)); 
+//	//printf("%d\n", sizeof(float));
+//	//printf("%d\n", sizeof(double));
+//	////结果1 2 4 4 8 4 8 （字节数）
+//	////C语言标准规定sizeof(long)>=sizeof(int)，所以sizeof(long)=4或8
+//	////字节 bit-比特位 1或0  byte-字节 一个字节等于8个比特位 kb mb gb tb pb
 //
 //	//short age = 20;//向内存申请2个字节（16个比特位=0-65535），来存放变量名为age的“20”这个整型数字
 //	//float weight = 95.6f;//向内存申请四个字节，用来存放小数，f表示95.6为单精度浮点数
 //	//printf("%d\n",age);
 //	//printf("%f\n", weight);
 //
-//	//总结
+//	//总结:
 //	//char        //字符数据类型
 //	//short       //短整型
 //	//int         //整型
@@ -64,7 +64,7 @@
 //	//%x-打印16进制数字
 //	//%o-打印8进制数字
 //	//%lf-打印双精度浮点型数字
-//	//网络总结
+//	//网络总结:
 //	//%d 十进制有符号整数
 //	//%u 十进制无符号整数
 //	//%f 浮点数
@@ -75,7 +75,6 @@
 //	//%x, %X 无符号以十六进制表示的整数
 //	//%0 无符号以八进制表示的整数
 //	//%g 自动选择合适的表示法
-//
 //
 //	return 0;
 //}
