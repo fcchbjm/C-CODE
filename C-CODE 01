@@ -107,7 +107,7 @@
 //	return 0;
 //}
 
-////字符、字符串和\0
+//字符、字符串和\0
 
 //#include<string.h>//用来使用strlen函数
 //int main()
