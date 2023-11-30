@@ -10,7 +10,7 @@ The notes of C-code learning
 **索引**
 
 
-C-CODE 01   初识C语言（1）
+C-CODE 01   C语⾔常⻅概念
 
 1.1 基本
 
@@ -212,3 +212,10 @@ C-CODE 12   数组（2）
 12.2 数组一般作为首元素的地址及两种例外
 
 C-CODE 13   C语言实现三子棋（1）
+
+
+**附件：**
+
+1. ASCII可显示字符.png
+
+2. ASCII控制字符.png
