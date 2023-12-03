@@ -1,4 +1,4 @@
-[第1讲：C语言常见概念.pdf](https://github.com/fcchbjm/C-CODE/files/13538209/1.C.pdf)# C-CODE
+# C-CODE
 The notes of C-code learning
 
 这是我自学C语言的笔记，每段代码之间用回车键隔开并添加注释，去掉相应代码段的注释后即可正常运行，可以自行尝试，相信你结合注释一定能看懂
@@ -10,8 +10,7 @@ The notes of C-code learning
 **索引**
 
 
-# C-CODE 01   C语⾔常⻅概念 
-https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2001
+# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2001)
 
 **1.1 基本**
 
@@ -38,8 +37,7 @@ https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2001
 1.6.2 C语言中的注释
 
 
-# C-CODE 02   C语⾔数据类型和变量 
-https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2002
+# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2002)
 
 **2.1 数据类型**
 
@@ -106,8 +104,7 @@ https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2002
 2.8.4 赋值忽略符
 
 
-# C-CODE 03   分支与循环（1） 
-https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2003
+# C-CODE 03   [分支与循环（1）](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2003)
 
 **3.1 if语句**
 
