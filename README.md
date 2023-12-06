@@ -14,7 +14,10 @@ The notes of C-code learning
 **索引：**
 
 
-# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2001)
+# [Notes](https://github.com/fcchbjm/C-CODE/tree/main/Notes)
+
+
+# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001)
 
 **1.1 基本**
 
@@ -41,7 +44,7 @@ The notes of C-code learning
 1.6.2 C语言中的注释
 
 
-# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2002)
+# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002)
 
 **2.1 数据类型**
 
@@ -108,7 +111,7 @@ The notes of C-code learning
 2.8.4 赋值忽略符
 
 
-# C-CODE 03   [分支与循环（1）](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2003)
+# C-CODE 03   [分支与循环（1）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003)
 
 **3.1 if语句**
 
