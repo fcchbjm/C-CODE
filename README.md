@@ -9,7 +9,7 @@ The notes of C-code learning
 [2023/11/23]所有文件正在重构
 
 
-**索引**
+**索引：**
 
 
 # C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/C-CODE%2001)
