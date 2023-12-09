@@ -17,137 +17,16 @@ The notes of C-code learning
 # [Notes](https://github.com/fcchbjm/C-CODE/tree/main/Notes)
 
 
-# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001)
+C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001)
 
-**1.1 基本**
 
-**1.2 数据类型**
+C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002)
 
-**1.3 C语言关键字和ASCII编码**
 
-1.3.1 常见关键字（32个）
+C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003)
 
-1.3.2 ASCII 编码
 
-**1.4 字符、字符串和\0**
-
-1.4.1 字符、字符串和'\0'
-
-1.4.2 strlen函数
-
-**1.5 转义字符**
-
-**1.6 语句和语句分类**
-
-1.6.1 空语句 表达式语句 函数调⽤语句 复合语句 控制语句
-
-1.6.2 C语言中的注释
-
-
-# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002)
-
-**2.1 数据类型**
-
-2.1.1 字符型
-
-2.1.2 整型
-
-2.1.3 浮点型
-
-2.1.4 布尔类型
-
-2.1.5 数据类型的⻓度和sizeof
-
-**2.2 signed和unsigned**
-
-2.2.1 signed和unsigned
-
-2.2.2 unsigned的优点和原码，反码及补码
-
-**2.3 数据类型的取值范围** 
-
-**2.4 变量**
-
-2.4.1 变量的创建和初始化
-
-2.4.2 全局变量和局部变量
-
-**2.5 算术操作符和赋值操作符**
-
-2.5.1 算术操作符
-
-2.5.2 赋值操作符
-
-2.5.3 复合赋值符
-
-**2.6 单⽬操作符和强制类型转换**
-
-2.6.1 单⽬操作符
-
-2.6.2 强制类型转换
-
-**2.7 printf函数**
-
-2.7.1 基本
-
-2.7.2 占位符
-
-2.7.3 占位符列举
-
-2.7.4 限定占位符的最⼩宽度
-
-2.7.5 限定⼩数位数
-
-2.7.6 输出部分字符串
-
-**2.8 scanf函数**
-
-2.8.1 基本以及scanf为什么不安全
-
-2.8.2 scanf的返回值
-
-2.8.3 占位符
-
-2.8.4 赋值忽略符
-
-
-# C-CODE 03   [分支与循环（1）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003)
-
-**3.1 if语句**
-
-3.1.1 悬空else问题
-
-3.1.2 关系操作符
-
-3.1.3 条件操作符
-
-3.1.4 逗号表达式
-
-3.1.5 逻辑操作符
-
-3.1.6 C语言中的“短路”
-
-3.1.7 [尝试]判断一个数是否为奇数
-
-3.1.8 [尝试]输出1~100之间的奇数
-
-**3.2 switch语句**
-
-**3.3 while循环**
-
-**3.4 for循环**
-
-**3.5 do while循环**
-
-**3.6 break和continue语句**
-
-**3.7 goto语句**
-
-
-C-CODE 04   初识C语言（4）
-
-4.1 结构体
-
+C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004)
 
 C-CODE 05   分支与循环（1）
 
