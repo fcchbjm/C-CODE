@@ -17,16 +17,16 @@ The notes of C-code learning
 # [Notes](https://github.com/fcchbjm/C-CODE/tree/main/Notes)
 
 
-C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001)
+C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001.c)
 
 
-C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002)
+C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002.c)
 
 
-C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003)
+C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003.c)
 
 
-C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004)
+C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004.c)
 
 C-CODE 05   分支与循环（1）
 
