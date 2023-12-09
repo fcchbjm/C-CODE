@@ -9,7 +9,7 @@ The notes of C-code learning
 
 
 
-# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001)
+# C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001.c)
 
 **1.1 基本**
 
@@ -36,7 +36,7 @@ The notes of C-code learning
 1.6.2 C语言中的注释
 
 
-# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002)
+# C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002.c)
 
 **2.1 数据类型**
 
@@ -103,7 +103,7 @@ The notes of C-code learning
 2.8.4 赋值忽略符
 
 
-# C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003)
+# C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003.c)
 
 **3.1 if语句**
 
@@ -136,7 +136,7 @@ The notes of C-code learning
 **3.7 goto语句**
 
 
-# C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004)
+# C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004.c)
 
 4.1 计算n的阶乘
 
