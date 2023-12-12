@@ -186,7 +186,7 @@ The notes of C-code learning
 
 4.16.3 time函数
 
-C-CODE 05   [数组](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2005.c)
+# C-CODE 05   [数组](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2005.c)
 
 **5.1 数组的概念**
 
