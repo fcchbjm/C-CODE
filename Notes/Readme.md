@@ -19,13 +19,13 @@ The notes of C-code learning
 
 1.3.1 常见关键字（32个）
 
-1.3.2 ASCII 编码
+1.3.2 `ASCII`编码
 
 **1.4 字符、字符串和\0**
 
-1.4.1 字符、字符串和'\0'
+1.4.1 字符、字符串和`\0`
 
-1.4.2 strlen函数
+1.4.2 `strlen`函数
 
 **1.5 转义字符**
 
@@ -48,13 +48,13 @@ The notes of C-code learning
 
 2.1.4 布尔类型
 
-2.1.5 数据类型的⻓度和sizeof
+2.1.5 数据类型的⻓度和`sizeof`
 
 **2.2 signed和unsigned**
 
-2.2.1 signed和unsigned
+2.2.1 `signed`和`unsigned`
 
-2.2.2 unsigned的优点和原码，反码及补码
+2.2.2 `unsigned`的优点和原码，反码及补码
 
 **2.3 数据类型的取值范围** 
 
@@ -78,7 +78,7 @@ The notes of C-code learning
 
 2.6.2 强制类型转换
 
-**2.7 printf函数**
+**2.7 `printf`函数**
 
 2.7.1 基本
 
@@ -92,11 +92,11 @@ The notes of C-code learning
 
 2.7.6 输出部分字符串
 
-**2.8 scanf函数**
+**2.8 `scanf`函数**
 
-2.8.1 基本以及scanf为什么不安全
+2.8.1 基本以及`scanf`为什么不安全
 
-2.8.2 scanf的返回值
+2.8.2 `scanf`的返回值
 
 2.8.3 占位符
 
@@ -123,17 +123,17 @@ The notes of C-code learning
 
 3.1.8 [尝试]输出1~100之间的奇数
 
-**3.2 switch语句**
+**3.2 `switch`语句**
 
-**3.3 while循环**
+**3.3 `while`循环**
 
-**3.4 for循环**
+**3.4 `for`循环**
 
-**3.5 do while循环**
+**3.5 `do while`循环**
 
-**3.6 break和continue语句**
+**3.6 `break`和`continue`语句**
 
-**3.7 goto语句**
+**3.7 `goto`语句**
 
 
 # C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004.c)
@@ -144,17 +144,17 @@ The notes of C-code learning
 
 4.3 在一个有序数组中查找到某个具体的数字
 
-**4.4 在一个有序数组中查找到某个具体的数字，运用二分查找算法**
+**4.4 在一个有序数组中查找到某个具体的数字，运用`二分查找`算法**
 
 **4.5 显示效果：字符串从两端向中间显示**
 
-4.5.1 Sleep函数
+4.5.1 `Sleep`函数
 
-4.5.2 system函数
+4.5.2 `system`函数
 
-**4.6 编写代码实现,模拟用户登录情景,并且只能登录三次。(只允许输入三次密码,如果密码正确,则提示登录成功, 如果三次均输入错误, 则退出程序。**
+**4.6 编写代码实现,模拟用户登录情景,并且只能登录三次。**
 
-4.6.1 strcmp函数
+4.6.1  `strcmp `函数
 
 4.7 将三个数从大到小输出
 
@@ -168,7 +168,7 @@ The notes of C-code learning
 
 **4.11 打印100~200之间的素数**
 
-4.11.1 sqrt函数
+4.11.1 `sqrt`函数
 
 4.12 数9的个数：数一下1~100之间所有的整数之间出现多少个数字9
 
@@ -180,11 +180,11 @@ The notes of C-code learning
 
 **4.16 猜数字游戏**
 
-4.16.1 rand函数
+4.16.1 `rand`函数
 
-4.16.2 srand函数
+4.16.2 `srand`函数
 
-4.16.3 time函数
+4.16.3 `time`函数
 
 # C-CODE 05   [数组](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2005.c)
 
