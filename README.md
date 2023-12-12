@@ -17,29 +17,19 @@ The notes of C-code learning
 # [Notes](https://github.com/fcchbjm/C-CODE/tree/main/Notes)
 
 
-C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001.c)
+*C-CODE 01   [C语⾔常⻅概念](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2001.c)*
 
 
-C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002.c)
+*C-CODE 02   [C语⾔数据类型和变量](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2002.c)*
 
 
-C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003.c)
+*C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003.c)*
 
 
-C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004.c)
+*C-CODE 04   [分支与循环（应用举例）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2004.c)*
 
-C-CODE 05   分支与循环（1）
 
-5.1 分支语句与循环语句
-
-5.2 if语句
-
-5.3 switch语句，常用于多分支语句
-
-5.4 while语句
-
-5.5 getchar语句
-
+*C-CODE 05   [数组](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2005.c)*
 
 C-CODE 06   分支与循环（2）
 
