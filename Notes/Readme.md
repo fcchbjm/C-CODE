@@ -105,9 +105,9 @@ The notes of C-code learning
 
 # C-CODE 03   [分支与循环（理论）](https://github.com/fcchbjm/C-CODE/blob/main/Notes/C-CODE%2003.c)
 
-**3.1 if语句**
+**3.1 `if`语句**
 
-3.1.1 悬空else问题
+3.1.1 悬空`else`问题
 
 3.1.2 关系操作符
 
