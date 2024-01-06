@@ -9,4 +9,4 @@ The Questions of C-code learning
 
 
 
-1.计算带余除法
+1.[计算带余除法](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E8%AE%A1%E7%AE%97%E5%B8%A6%E4%BD%99%E9%99%A4%E6%B3%95.c)
