@@ -14,3 +14,5 @@ The Questions of C-code learning
 2.[喝汽水问题](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E5%96%9D%E6%B1%BD%E6%B0%B4%E9%97%AE%E9%A2%98.c)
 
 3.[打印菱形](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E6%89%93%E5%8D%B0%E8%8F%B1%E5%BD%A2.c)
+
+4.[打印水仙花数](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E6%89%93%E5%8D%B0%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0.c)
