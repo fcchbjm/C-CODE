@@ -18,3 +18,5 @@ The Questions of C-code learning
 4.[打印水仙花数](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E6%89%93%E5%8D%B0%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0.c)
 
 5.[求a+aa+aaa+aaaa+aaaaa的前5项之和](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E6%B1%82a%2Baa%2Baaa%2Baaaa%2Baaaaa%E7%9A%84%E5%89%8D5%E9%A1%B9%E4%B9%8B%E5%92%8C.c)
+
+6.[计算斐波那契数](https://github.com/fcchbjm/C-CODE/blob/main/Questions/%E8%AE%A1%E7%AE%97%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0.c)
