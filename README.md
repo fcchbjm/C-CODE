@@ -138,6 +138,8 @@ C-CODE 12   数组（2）
 C-CODE 13   C语言实现三子棋（1）
 
 
+*C-CODE 25~29 [顺序表和链表](https://github.com/fcchbjm/SeqListAndSList)*
+
 **附件：**
 
 1. [ASCII可显示字符.png](https://github.com/fcchbjm/C-CODE/blob/main/ASCII%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6.png)
