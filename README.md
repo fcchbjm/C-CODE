@@ -137,8 +137,37 @@ C-CODE 12   数组（2）
 
 C-CODE 13   C语言实现三子棋（1）
 
+*C-CODE 06 函数*
 
-*C-CODE 25~29 [顺序表和链表](https://github.com/fcchbjm/SeqListAndSList)*
+*C-CODE 07 扫雷游戏*
+
+*C-CODE 08 VS调试技巧*
+
+*C-CODE 09 函数递归*
+
+*C-CODE 10 操作符详解*
+
+*C-CODE 11 ~ 15 指针*
+
+*C-CODE 16 字符函数和字符串函数*
+
+*C-CODE 17 C语言内存函数*
+
+*C-CODE 18 数据在内存中的存储*
+
+*C-CODE 19 结构体*
+
+*C-CODE 20 联合和枚举*
+
+*C-CODE 21 动态内存管理*
+
+*C-CODE 22 文件操作*
+
+*C-CODE 23 编译和链接*
+
+*C-CODE 24 预处理详解*
+
+*C-CODE 25 ~ 29 [顺序表和链表](https://github.com/fcchbjm/SeqListAndSList)*
 
 **附件：**
 
