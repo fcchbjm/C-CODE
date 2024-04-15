@@ -167,7 +167,7 @@ C-CODE 13   C语言实现三子棋（1）
 
 *C-CODE 24 预处理详解*
 
-*C-CODE 25 ~ 29 [顺序表和链表](https://github.com/fcchbjm/SeqListAndSList)*
+*C-CODE 25 ~ 29 [顺序表和链表](https://github.com/fcchbjm/Lists)*
 
 **附件：**
 
